@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year PhD candidate in the [Tri-Institutional Computational Biology & Medicine (CBM)](https://tricbm.weill.cornell.edu/) program at The Rockefeller University, advised by [Prof. Jiankun Lyu](https://lyulab.org/).
+I am a 3rd year PhD candidate in the [Tri-Institutional Computational Biology & Medicine (CBM)](https://compbio.triiprograms.org/) program at The Rockefeller University, advised by [Prof. Jiankun Lyu](https://lyulab.org/).
 
 Prior to this, I completed my undergraduate studies at UC Berkeley, where I earned a dual degree in Computer Science B.A. and Chemical Biology B.S.
 

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year PhD student in the [Tri-Institutional Computational Biology & Medicine (CBM)](https://tricbm.weill.cornell.edu/) program at The Rockefeller University, advised by [Prof. Liangyou Lyu](https://sites.weill.cornell.edu/lilab/).
+I am a first-year PhD student in the [Tri-Institutional Computational Biology & Medicine (CBM)](https://tricbm.weill.cornell.edu/) program at The Rockefeller University, advised by [Prof. Jiankun Lyu](https://lyulab.org/).
 
 Prior to this, I completed my undergraduate studies at UC Berkeley, where I earned a B.A. in Computer Science and a B.S. in Chemical Biology.
 

@@ -26,6 +26,5 @@ Prior to this, I completed my undergraduate studies at UC Berkeley, where I earn
 
 ## Contact
 
-- Email: [robbywang2000@gmail.com](mailto:robbywang2000@gmail.com)
 - LinkedIn: [linkedin.com/in/yangzhiwang](https://linkedin.com/in/yangzhiwang)
 - GitHub: [github.com/robby-wang](https://github.com/robby-wang)

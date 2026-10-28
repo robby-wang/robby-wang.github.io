@@ -36,3 +36,5 @@ main:
     children:
       - title: "Chemical Group pKa"
         url: /chemical-group-pka/
+      - title: "Proteinogenic Amino Acids"
+        url: /amino-acids/

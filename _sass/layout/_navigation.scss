@@ -442,3 +442,59 @@
     }
   }
 }
+
+
+/* Hover dropdown in the masthead */
+.greedy-nav {
+  .has-dropdown {
+    position: relative;
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 12rem;
+      margin: 0;
+      padding: 5px;
+      list-style: none;
+      border: 1px solid var(--global-border-color);
+      border-radius: $border-radius;
+      background: var(--global-bg-color);
+      box-shadow: 0 0 10px rgba(#000, 0.25);
+      z-index: 100;
+
+      li {
+        display: block;
+      }
+
+      a {
+        margin: 0;
+        padding: 10px 20px;
+        white-space: nowrap;
+        font-size: $type-size-5;
+
+        &:before {
+          display: none;
+        }
+
+        &:hover {
+          background: var(--global-border-color);
+        }
+      }
+    }
+
+    &:hover .dropdown-menu,
+    &:focus-within .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .hidden-links .has-dropdown .dropdown-menu {
+    display: block;
+    position: static;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0 10px;
+  }
+}

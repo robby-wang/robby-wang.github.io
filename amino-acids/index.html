@@ -18,6 +18,14 @@
   .figure img { display:block; width:100%; height:auto; }
   .credit { font-size:.88rem; color:var(--muted); margin-top:16px; }
   .back { display:inline-block; margin-bottom:12px; font-size:.9rem; }
+  .notes { margin-top:28px; }
+  .notes h2 { font-size:1.25rem; margin:28px 0 8px; }
+  .tablewrap { overflow-x:auto; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; font-size:.92rem; }
+  th, td { border:1px solid var(--border); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:rgba(127,127,127,.12); }
+  td:nth-child(2) { white-space:nowrap; }
+  .notes ul { padding-left:1.3rem; }
 </style>
 </head>
 <body>
@@ -29,6 +37,57 @@
   <div class="figure">
     <a href="ProteinogenicAminoAcids.svg"><img src="ProteinogenicAminoAcids.svg" alt="Structures of the 21 proteinogenic amino acids in zwitterionic form at pH 7.4"></a>
   </div>
+
+
+<section class="notes">
+<h2>Amino acid composition and roles in binding</h2>
+<p><strong>Frequencies</strong> below are approximate, from UniProtKB/Swiss-Prot averages. They vary by proteome, and membrane proteins and intrinsically disordered regions (IDRs) deviate a lot (see notes after the table).</p>
+<div class="tablewrap"><table>
+<thead><tr><th>AA</th><th>~%</th><th>Class</th><th>Role in pockets / ligand binding / PPI</th></tr></thead>
+<tbody>
+<tr><td><strong>Leu</strong></td><td>9.7</td><td>Aliphatic hydrophobic</td><td>Core packing and hydrophobic pocket lining. Leucine-rich motifs (LxxLL in nuclear receptor coactivators, NES) are classic PPI recognition elements.</td></tr>
+<tr><td><strong>Ala</strong></td><td>8.3</td><td>Small hydrophobic</td><td>Rarely a direct binder. Alanine scanning is the standard way to define hotspots, and Ala helps keep pockets open and small-ligand accessible.</td></tr>
+<tr><td><strong>Gly</strong></td><td>7.1</td><td>Special</td><td>Loop flexibility and backbone H-bonding. The kinase Gly-rich P-loop (GxGxxG) and phosphate-binding loops depend on it.</td></tr>
+<tr><td><strong>Val</strong></td><td>6.9</td><td>β-branched hydrophobic</td><td>Pocket lining, β-strand packing, and common in hydrophobic subpockets (e.g. kinase back pocket).</td></tr>
+<tr><td><strong>Glu</strong></td><td>6.8</td><td>Acidic</td><td>Salt bridges, solvent-exposed surface charge, and metal coordination. The kinase αC-Glu/β3-Lys pair is a key conformational switch.</td></tr>
+<tr><td><strong>Ser</strong></td><td>6.6</td><td>Polar</td><td>H-bond donor/acceptor, and catalytic nucleophile in serine hydrolases/proteases. Also a phosphosite and a GPCR ligand H-bond anchor (e.g. TM5 serines for catecholamines).</td></tr>
+<tr><td><strong>Ile</strong></td><td>6.0</td><td>β-branched hydrophobic</td><td>Hydrophobic packing. Can be an important hotspot contributor in some PPIs.</td></tr>
+<tr><td><strong>Lys</strong></td><td>5.8</td><td>Basic</td><td>Salt bridges, cation–π, and a covalent target (sulfonyl fluorides, activated esters, aldehydes). Surface-enriched, so often depleted in pockets.</td></tr>
+<tr><td><strong>Arg</strong></td><td>5.5</td><td>Basic</td><td>Bidentate H-bonds and salt bridges (guanidinium), and cation–π. One of the top PPI hotspot residues. Anchors phosphate/carboxylate binding (e.g. trypsin-like S1 uses Asp189 for Arg/Lys recognition).</td></tr>
+<tr><td><strong>Asp</strong></td><td>5.5</td><td>Acidic</td><td>Metal coordination (kinase DFG-Asp with Mg²⁺), catalytic residues, and salt bridges. Aminergic GPCR D3.32 anchors protonated amines.</td></tr>
+<tr><td><strong>Thr</strong></td><td>5.3</td><td>Polar</td><td>Like Ser, plus a gatekeeper residue in kinases (T790M in EGFR, T315I in BCR-ABL are resistance mutations at this position).</td></tr>
+<tr><td><strong>Pro</strong></td><td>4.7</td><td>Special</td><td>Rigid turns and polyproline-II helices recognized by SH3, WW, and EVH1 domains. Depletes helices and is enriched in IDRs.</td></tr>
+<tr><td><strong>Asn</strong></td><td>4.1</td><td>Polar amide</td><td>Strong H-bonding (both donor and acceptor), turns, and N-glycosylation (N-X-S/T).</td></tr>
+<tr><td><strong>Gln</strong></td><td>3.9</td><td>Polar amide</td><td>H-bonding and common in IDRs/low-complexity regions. Less pocket-enriched than Asn.</td></tr>
+<tr><td><strong>Phe</strong></td><td>3.9</td><td>Aromatic</td><td>π-stacking, edge-to-face interactions, and hydrophobic enclosure. Strongly enriched in ligand pockets.</td></tr>
+<tr><td><strong>Tyr</strong></td><td>2.9</td><td>Aromatic + OH</td><td>Combines π-stacking with an H-bond donor/acceptor. A top PPI hotspot, a phosphosite, and a SuFEx covalent target.</td></tr>
+<tr><td><strong>Met</strong></td><td>2.4</td><td>Hydrophobic, flexible</td><td>Long, polarizable side chain that adapts to ligands. Sulfur–aromatic interactions, and often enriched in binding pockets.</td></tr>
+<tr><td><strong>His</strong></td><td>2.3</td><td>Aromatic/basic (pKa ~6–7)</td><td>Metal coordination (Zn, Fe, Cu), and pH-dependent charge/tautomer state. Important in catalysis and enriched in pockets.</td></tr>
+<tr><td><strong>Cys</strong></td><td>1.4</td><td>Thiol</td><td>Covalent drug target (acrylamides: KRAS G12C, BTK C481, EGFR C797), metal binding (Zn fingers), disulfides, and redox sensing. Rare but heavily enriched in functional sites.</td></tr>
+<tr><td><strong>Trp</strong></td><td>1.1</td><td>Aromatic, largest</td><td>The rarest residue but the strongest hotspot contributor in PPIs. Large buried surface, π interactions, and indole NH H-bond. Enriched in ligand pockets.</td></tr>
+</tbody></table></div>
+<h2>Key patterns</h2>
+<p><strong>PPI hotspots.</strong> Bogan &amp; Thorn (1998) found that hotspots are enriched in <strong>Trp, Arg, and Tyr</strong>, with Ile, Asp, and Pro also contributing. Leu, Ser, Thr, and Val are comparatively underrepresented. Hotspots tend to be buried and ringed by hydrophobic residues that exclude water ("O-ring" model). This is why PPI inhibitors often need to mimic Trp/Leu/Phe side chains (e.g. p53–MDM2: Phe19, Trp23, Leu26 sit in the MDM2 cleft).</p>
+<p><strong>Ligand pockets.</strong> Binding sites are consistently enriched in the larger aromatic and polarizable residues (<strong>Trp, Tyr, Phe, His, Met, Cys</strong>) plus <strong>Arg/Asp</strong> for specific polar anchors. They are depleted in Lys, Glu, Gln, and Pro, which are more surface-typical.</p>
+<p><strong>Druggability and chemistry.</strong></p>
+<ul>
+<li>Nucleophiles for covalent chemistry: Cys (most common), Lys, Tyr, His, Ser, and Thr.</li>
+<li>Charged anchors for selectivity: Asp/Glu/Arg/Lys give directional salt bridges that are hard to get from hydrophobic contacts alone.</li>
+<li>Gatekeeper residues (Thr/Met/Phe/Leu) shape kinase selectivity.</li>
+</ul>
+<p><strong>Composition caveats.</strong></p>
+<ul>
+<li>Transmembrane proteins are enriched in Leu, Ile, Val, Phe, Ala, and Gly.</li>
+<li>IDRs are enriched in Ser, Pro, Glu, Gln, Lys, and Gly, and depleted in Trp, Phe, Tyr, Ile, Leu, and Cys.</li>
+</ul>
+<h2>Practical notes for modeling and docking</h2>
+<ul>
+<li><strong>His tautomer and protonation state</strong> (HID/HIE/HIP) can change docking poses and scores substantially.</li>
+<li><strong>Asn/Gln/His flips</strong> should be checked, since crystal structures often assign amide orientation arbitrarily.</li>
+<li><strong>Cys pKa</strong> varies widely (thiolate vs thiol), which matters for covalent docking.</li>
+<li><strong>Lys/Arg/Asp/Glu</strong> protonation can shift in buried pockets, so PROPKA-type estimates are worth running.</li>
+</ul>
+</section>
 
   <p class="credit">
     Image: <a href="https://commons.wikimedia.org/wiki/File:ProteinogenicAminoAcids.svg">ProteinogenicAminoAcids.svg</a>
